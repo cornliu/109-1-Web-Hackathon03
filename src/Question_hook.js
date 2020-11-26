@@ -7,22 +7,23 @@ const instance = axios.create({
 })
 
 function Question() {
-  const [complete, setComplete] = useState(false)
-  const [contents, setContents] = useState([])
-  const [ans, setAns] = useState([])
-  const [score, setScore] = useState(0)
-  const [current_question, setCurrentQuestion] = useState(0)
+  const [complete, setComplete] = useState(false)  // true if answered all questions
+  const [contents, setContents] = useState([])     // to store questions
+  const [ans, setAns] = useState([])               // to record your answers
+  const [score, setScore] = useState(0)            // Your score
+  const [current_question, setCurrentQuestion] = useState(0) // index to current question
 
   const next = () => {
-    // TODO : switch to next question, and check answers after you finished the 4th question
+    // TODO : switch to the next question,
+    // and check answers to set the score after you finished the last question
   }
 
   const choose = () => {
-    // TODO : choose option you clicked
+    // TODO : update 'ans' for the option you clicked
   }
 
   const getQuestions = () => {
-    // TODO : call backend to get questions
+    // TODO : get questions from backend
   }
 
   useEffect(() => {
@@ -30,6 +31,7 @@ function Question() {
       getQuestions()
   })
 
+  // TODO : fill in the rendering contents and logic
   return (
     <div id="quiz-container">
       {contents.length ?
