@@ -6,5 +6,6 @@ exports.GetContents = async (req, res) => {
 }
 
 exports.CheckAns = async (req, res) => {
-  // TODO : get answers from mongodb, check answers coming from frontend and return score to frontend
+  // TODO : get answers from mongodb,
+  // check answers coming from frontend and return score to frontend
 }

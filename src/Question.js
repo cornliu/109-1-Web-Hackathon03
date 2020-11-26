@@ -10,30 +10,32 @@ class Question extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      complete: false,
-      contents: [],
-      ans: [],
-      score: 0,
-      current_question: 0
+      complete: false,    // true if answered all questions
+      contents: [],       // to store questions
+      ans: [],            // to record your answers
+      score: 0,           // Your score
+      current_question: 0 // index to current question
     }
   }
 
   next = () => {
-    // TODO : switch to next question, and check answers after you finished the 4th question
+    // TODO : switch to the next question,
+    // and check answers to set the score after you finished the last question    
   }
 
   choose = () => {
-    // TODO : choose option you clicked
+    // TODO : update 'ans' for the option you clicked
   }
 
   getQuestions = () => {
-    // TODO : call backend to get questions
+    // TODO : get questions from backend
   }
 
   componentDidMount() {
     this.getQuestions()
   }
 
+  // TODO : fill in the rendering contents and logic
   render() {
     const contents = this.state.contents
     const current = this.state.current_question
