@@ -11,18 +11,18 @@ function Question() {
   const [contents, setContents] = useState([])
   const [ans, setAns] = useState([])
   const [score, setScore] = useState(0)
-  const [current, setCurrent] = useState(0)
+  const [current_question, setCurrentQuestion] = useState(0)
 
   const next = () => {
-    // implement here
+    // TODO : switch to next question, and check answers after you finished the 4th question
   }
 
   const choose = () => {
-    // implement here
+    // TODO : choose option you clicked
   }
 
   const getQuestions = () => {
-    // implement here
+    // TODO : call backend to get questions
   }
 
   useEffect(() => {

@@ -19,15 +19,15 @@ class Question extends Component {
   }
 
   next = () => {
-    // implement here
+    // TODO : switch to next question, and check answers after you finished the 4th question
   }
 
   choose = () => {
-    // implement here
+    // TODO : choose option you clicked
   }
 
   getQuestions = () => {
-    // implement here
+    // TODO : call backend to get questions
   }
 
   componentDidMount() {

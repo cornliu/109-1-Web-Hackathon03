@@ -3,8 +3,7 @@ import cors from 'cors'
 import routes from './routes'
 import mongoose from 'mongoose'
 
-import mongoURL from '../mongoURL'
-
+require('dotenv').config()
 const app = express()
 
 // init middleware
@@ -26,7 +25,7 @@ const dboptions = {
   useUnifiedTopology: true,
   poolSize: 10
 }
-// connect mongodb here
+// TODO : connect mongodb here
 
 routes(app)
 
