@@ -24,7 +24,7 @@ function Question() {
     _ans.push(currentans)
     setAns(_ans)
     setchecks([false, false, false, false])
-    if (current_question === contents.length){
+    if (current_question+1 === contents.length){
       const {
         data: { score }
       } = await instance.post('/checkAns', { answer: ans })

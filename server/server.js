@@ -5,6 +5,8 @@ import mongoose from 'mongoose'
 import {GetContents, CheckAns} from './routes/question'
 require('dotenv').config()
 const app = express()
+const router = express.Router()
+export {router}
 
 // init middleware
 app.use(cors())
@@ -37,7 +39,9 @@ db.on('error', (error) => {
 db.once('open', () => {
   console.log('MongoDB connected!')
   // GetContents()
+  // CheckAns()
 })
+
 
 
 routes(app)
